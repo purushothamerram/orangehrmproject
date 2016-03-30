@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="on firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.orangehrm.baseclasses.logooutt">
+        <methods>
+          <include name="logouttes"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.logooutt -->
+      <class name="com.orangehrm.baseclasses.screenshottest">
+        <methods>
+          <include name="screen"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.screenshottest -->
+      <class name="com.orangehrm.baseclasses.Addemployee">
+        <methods>
+          <include name="addemploytest1"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.Addemployee -->
+      <class name="com.orangehrm.baseclasses.login">
+        <methods>
+          <include name="logintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.login -->
+    </classes>
+  </test> <!-- on firefox(failed) -->
+  <test name="on chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.baseclasses.logooutt">
+        <methods>
+          <include name="logouttes"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.logooutt -->
+      <class name="com.orangehrm.baseclasses.screenshottest">
+        <methods>
+          <include name="screen"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.screenshottest -->
+      <class name="com.orangehrm.baseclasses.Addemployee">
+        <methods>
+          <include name="addemploytest1"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.Addemployee -->
+      <class name="com.orangehrm.baseclasses.login">
+        <methods>
+          <include name="logintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclasses.login -->
+    </classes>
+  </test> <!-- on chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
